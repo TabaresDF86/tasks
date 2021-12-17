@@ -1,0 +1,28 @@
+<nav class="navbar navbar-dark bg-primary">
+    <a class="navbar-brand" href="/">
+        Administrador de Tareas
+    </a>
+</nav>    
+    <div class="container">
+        <div class="card card-container">
+            <!-- <img class="profile-img-card" src="//lh3.googleusercontent.com/-6V8xOA6M7BA/AAAAAAAAAAI/AAAAAAAAAAA/rzlHcD0KYwo/photo.jpg?sz=120" alt="" /> -->
+            <img id="profile-img" class="profile-img-card" src="assets/tasks.png" />
+            <p id="profile-name" class="profile-name-card"></p>
+            <legend text-align: justify>Registro</legend>
+            <div class = "form-group">
+                <span id="reauth-email" class="reauth-email"></span>
+                <input type="name" id="inputName" class="form-control" placeholder="Nombre" required>
+                <input type="lastName" id="inputLastName" class="form-control" placeholder="Apellido" required>
+                <input type="email" id="inputEmail" class="form-control" placeholder="Email" required>
+                <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required formControlName="password">
+                <input type="password" id="inputConfirmedPassword" class="form-control" placeholder="Confirmar Contraseña" required formControlName="password">
+                <div id="remember" class="checkbox">
+                </div>
+                <br>
+                <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Registrarse</button>
+                <br>
+            <a href="#" class="register" >
+                Ingresar
+            </a>
+        </div><!-- /card-container -->
+    </div><!-- /container -->
