@@ -1,1 +1,45 @@
-<p>create works!</p>
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            Agregar Tarea
+        </div>
+        <div class="card-body">
+            <form>
+                <div class="mb-3">
+                    <label for="" class="form-label">Nombre:</label>
+                        <input type="text"
+                            class="form-control" name="" id="" aria-describedby="helpId" placeholder="Escriba el nombre de la tarea">
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Descripción:</label>
+                        <input type="text"
+                            class="form-control" name="" id="" aria-describedby="helpId" placeholder="Agregar descripción">
+                </div>
+                <div class="form-group">
+                    <label for="" class="form-label">Fecha de creación:</label>
+                    <input type="date" name="begin" max="3000-12-31" 
+                           min="1000-01-01" class="form-control">
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="" class="form-label">Fecha de finalización:</label>
+                    <input type="date" name="ending" min="1000-01-01"
+                           max="3000-12-31" class="form-control">
+                </div>
+                <br>
+                <div class="mb-3">
+                    <label for="" class="form-label">Estado:</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>seleccionar estado de la tarea</option>
+                        <option value="1">En Proceso</option>
+                        <option value="2">Finalizada</option>
+                      </select>
+                </div>
+                <br>
+                <div class="d-grid gap-2 col-4 mx-auto">
+                    <button class="btn btn-primary" type="button">Enviar</button>
+                  </div>
+            </form>
+        </div>
+    </div>
+</div>    

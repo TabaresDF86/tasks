@@ -4,13 +4,15 @@ import { LoginComponent } from './views/login/login.component';
 import { RegisterComponent } from './views/register/register.component';
 import { ListComponent } from './views/list/list.component';
 import { CreateComponent } from './views/create/create.component';
+import { EditComponent } from './views/edit/edit.component';
 
 const routes: Routes = [
   { path:'', redirectTo:'login', pathMatch:'full'},
-  { path:'login', component:LoginComponent},
-  { path:'register', component:RegisterComponent},
-  { path:'list', component:ListComponent},
-  { path:'create', component:CreateComponent}
+  { path:'login', component: LoginComponent},
+  { path:'register', component :RegisterComponent},
+  { path:'list', component: ListComponent},
+  { path:'create', component: CreateComponent},
+  { path:'edit/:id', component: EditComponent}
 ];
 
 @NgModule({
@@ -18,4 +20,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const routingComponents = [LoginComponent,RegisterComponent,ListComponent,CreateComponent]
+export const routingComponents = [LoginComponent,RegisterComponent,ListComponent,EditComponent]

@@ -28,7 +28,7 @@ export class LoginComponent implements OnInit {
     this.api.loginByEmail(form).subscribe(data =>{
       let dataResponse:ResponseI = data;
       if(dataResponse.status == "ok"){
-        localStorage.setItem("token",dataResponse.result.token);
+        localStorage.setItem("token",dataResponse.msg.token);
         this.router.navigate(['list']);
       }
     })
