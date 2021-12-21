@@ -1,22 +1,62 @@
-    <div class="container">
-        <div class="card card-container">
-            <!-- <img class="profile-img-card" src="//lh3.googleusercontent.com/-6V8xOA6M7BA/AAAAAAAAAAI/AAAAAAAAAAA/rzlHcD0KYwo/photo.jpg?sz=120" alt="" /> -->
-            <img id="profile-img" class="profile-img-card" src="assets/tasks.png" />
-            <p id="profile-name" class="profile-name-card"></p>
-            <form [formGroup]="loginForm" (ngSubmit)="onLogin(loginForm.value)">
-                <span id="reauth-email" class="reauth-email"></span>
-                <input type="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus formControlName="user">
-                <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required formControlName="password">
-                <div id="remember" class="checkbox">
-                    <label>
-                        <input type="checkbox" value="remember-me"> Recordar
-                    </label>
+<section>
+    <header>
+        <a><img src="assets/tasks.png" class="logo"></a>
+            <ul>
+                <li><a href="#">Register</a></li>
+                <li><a href="#">My tasks</a></li>
+                <li><a href="#">Search Tasks</a></li>
+                <li><a href="#">Sing Out</a></li>
+            </ul>
+    </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>your tasks<br><span>manage!</span></h2>
+                <p>Lorem ipsum dolor sit amet. A dolor neque nam blanditiis facilis ut perferendis 
+                    quia sed excepturi nihil et consequatur quisquam sed iure fuga? In voluptate 
+                    cupiditate qui esse aliquid et praesentium dolorem aut consequatur molestias 
+                    sed tempora minima.</p>
+            </div>
+            <div class="Box">
+                <div class="card card-container">
+                   <img id="profile-img" class="profile-img-card" src="assets/login.png" />
+                    <p id="profile-name" class="profile-name-card"></p>
+                    <form [formGroup]="loginForm" (ngSubmit)="onLogin(loginForm.value)">
+                        <span id="reauth-email" class="reauth-email"></span>
+                        <input type="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus formControlName="user">
+                        <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required formControlName="password">
+                        <div id="remember" class="checkbox">
+                            <label>
+                                <input type="checkbox" value="remember-me"> Remenber
+                            </label>
+                        </div>
+                        <br>
+                        <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit" >Send</button>
+                    </form>
+                    <br>
+                    <p>You don't have an account?</p>
+                    <a href="#" class="register">Register</a>
                 </div>
-                <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Enviar</button>
-            </form><!-- /form -->
-            <a href="#" class="register">
-                Registrarse
-            </a>
-        </div><!-- /card-container -->
-    </div><!-- /container -->
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="assets/createTasks.png"></li>
+            <li><img src="assets/adminTasks.png"></li>
+            <li><img src="assets/manageTasks.png"></li>
+        </ul>
+        <ul class="thumbText">
+            <li>create</li>
+            <li>optimize</li>
+            <li>manage</li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="assets/facebook.png"></a></li>
+            <li><a href="#"><img src="assets/instagram.png"></a></li>
+            <li><a href="#"><img src="assets/twitter.png"></a></li>
+        </ul>
+</section>
 
+
+    
+    
+    
+    
