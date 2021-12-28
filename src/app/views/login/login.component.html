@@ -2,21 +2,22 @@
     <header>
         <a><img src="assets/tasks.png" class="logo"></a>
             <ul>
-                <li><a href="#">Register</a></li>
-                <li><a href="#">My tasks</a></li>
-                <li><a href="#">Search Tasks</a></li>
-                <li><a href="#">Sing Out</a></li>
+                <li><a routerLink="/register">Registrarse</a></li>
+                <li><a routerLink="/create">Agregar Tareas</a></li>
+                <li><a routerLink="/list">Consultar Tareas</a></li>
+                <li><a href="#">Cerrar Sesión</a></li>
             </ul>
     </header>
         <div class="content">
             <div class="textBox">
-                <h2>your tasks<br><span>manage!</span></h2>
+                <h2>tienes tareas ?<br><span>administralas!</span></h2>
                 <p>Lorem ipsum dolor sit amet. A dolor neque nam blanditiis facilis ut perferendis 
                     quia sed excepturi nihil et consequatur quisquam sed iure fuga? In voluptate 
                     cupiditate qui esse aliquid et praesentium dolorem aut consequatur molestias 
                     sed tempora minima.</p>
             </div>
             <div class="Box">
+                <div class="container">
                 <div class="card card-container">
                    <img id="profile-img" class="profile-img-card" src="assets/login.png" />
                     <p id="profile-name" class="profile-name-card"></p>
@@ -26,27 +27,28 @@
                         <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required formControlName="password">
                         <div id="remember" class="checkbox">
                             <label>
-                                <input type="checkbox" value="remember-me"> Remenber
+                                <input type="checkbox" value="remember-me"> Recordar
                             </label>
                         </div>
                         <br>
-                        <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit" >Send</button>
+                        <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit" >Ingresar</button>
                     </form>
                     <br>
-                    <p>You don't have an account?</p>
-                    <a href="#" class="register">Register</a>
+                    <p>aún no tines una cuenta?</p>
+                    <a routerLink="/register" class="register">Registrate</a>
                 </div>
             </div>
         </div>
+        </div>
         <ul class="thumb">
-            <li><img src="assets/createTasks.png"></li>
-            <li><img src="assets/adminTasks.png"></li>
-            <li><img src="assets/manageTasks.png"></li>
+            <li><a routerLink="/create"><img src="assets/createTasks.png"></a></li>
+            <li><a routerLink="/list"><img src="assets/adminTasks.png"></a></li>
+            <li><a routerLink="/edit"><img src="assets/manageTasks.png"></a></li>
         </ul>
         <ul class="thumbText">
-            <li>create</li>
-            <li>optimize</li>
-            <li>manage</li>
+            <li>crea</li>
+            <li>administra</li>
+            <li>optimiza</li>
         </ul>
         <ul class="sci">
             <li><a href="#"><img src="assets/facebook.png"></a></li>

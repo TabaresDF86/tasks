@@ -1,32 +1,48 @@
-<div class="container">
-    <div class="card">
-        <div class="card-header">
+<section>
+    <header>
+        <a><img src="assets/tasks.png" class="logo"></a>
+            <ul>
+                <li><a routerLink="/register">Registrarse</a></li>
+                <li><a routerLink="/create">Agregar Tareas</a></li>
+                <li><a routerLink="/list">Consultar Tareas</a></li>
+                <li><a href="#">Cerrar Sesión</a></li>
+            </ul>
+    </header>
+        <div class="container">
+            <div class="card">
+                <div class="card-header">
+                    <a class="btn btn-success" routerLink="/create"> Agregar nueva tarea </a>
+                </div>
+                <div class="card-body">
+                    <h2>Lista de Tareas</h2>
+                    <table class="table table-light">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Nombre</th>
+                                <th>Descripción</th>
+                                <th>Fecha de creación</th>
+                                <th>Fecha de finalización</th>
+                                <th>Estado</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let task of tasks; let iControl=index">
+                                <td> {{ task.id}} </td>
+                                <td> {{ task.name_task}} </td>
+                                <td> {{ task.description}} </td>
+                                <td> {{ task.dateBegin}} </td>
+                                <td> {{ task.dateEnding}} </td>
+                                <td> {{ task.task_condition}} </td>
+                                <td>
+                                    <a class="btn btn-info" routerLink="/edit/{{ task.id }}"> Editar </a> | 
+                                    <a class="btn btn-danger" (click)="eraseTask(task.id,iControl)" role="button">Borrar</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
-        <div class="card-body">
-            <table class="table table-light">
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Nombre</th>
-                        <th>Descripción</th>
-                        <th>Fecha de creación</th>
-                        <th>Fecha de finalización</th>
-                        <th>Estado</th>
-                        <th>Acciones</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td> Editar | Borrar </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-</div>
+</section>

@@ -1,23 +1,56 @@
-    <div class="container">
-        <div class="card card-container">
-            <!-- <img class="profile-img-card" src="//lh3.googleusercontent.com/-6V8xOA6M7BA/AAAAAAAAAAI/AAAAAAAAAAA/rzlHcD0KYwo/photo.jpg?sz=120" alt="" /> -->
-            <img id="profile-img" class="profile-img-card" src="assets/tasks.png" />
-            <p id="profile-name" class="profile-name-card"></p>
-            <legend text-align: justify>Registro</legend>
-            <div class = "form-group">
-                <span id="reauth-email" class="reauth-email"></span>
-                <input type="name" id="inputName" class="form-control" placeholder="Nombre" required>
-                <input type="lastName" id="inputLastName" class="form-control" placeholder="Apellido" required>
-                <input type="email" id="inputEmail" class="form-control" placeholder="Email" required>
-                <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required formControlName="password">
-                <input type="password" id="inputConfirmedPassword" class="form-control" placeholder="Confirmar Contraseña" required formControlName="password">
-                <div id="remember" class="checkbox">
+<section>
+        <header>
+            <a><img src="assets/tasks.png" class="logo"></a>
+                <ul>
+                    <li><a routerLink="/register">Registrarse</a></li>
+                    <li><a routerLink="/create">Agregar Tareas</a></li>
+                    <li><a routerLink="/list">Consultar Tareas</a></li>
+                    <li><a href="#">Cerrar Sesión</a></li>
+                </ul>
+        </header>
+        <div class="content">
+            <div class="content">
+                <figure>
+                    <img src="assets/manageTasks.png">
+                    <div class="capa">
+                        <h2>Crea Gestiona Optimiza</h2>
+                        <p>Lorem ipsum dolor sit amet. A dolor neque nam blanditiis facilis ut perferendis 
+                            quia sed excepturi nihil et consequatur quisquam sed iure fuga? In voluptate 
+                            cupiditate qui esse aliquid et praesentium dolorem aut consequatur molestias 
+                            sed tempora minima.</p>
+                    </div>
+                </figure>
+            </div>    
+            <div class="Box"> 
+                <div class="container">
+                        <div class="card card-container">
+                            <img id="profile-img" class="profile-img-card" src="assets/register.png" />
+                            <p id="profile-name" class="profile-name-card"></p>
+                            <legend text-align: justify>Registro</legend>
+                            <div class = "form-group">
+                                <span id="reauth-email" class="reauth-email"></span>
+                                <input type="name" id="inputName" class="form-control" placeholder="Nombre" required>
+                                <input type="lastName" id="inputLastName" class="form-control" placeholder="Apellido" required>
+                                <input type="email" id="inputEmail" class="form-control" placeholder="Email" required>
+                                <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required formControlName="password">
+                                <input type="password" id="inputConfirmedPassword" class="form-control" placeholder="Confirmar Contraseña" required formControlName="password">
+                                <div id="remember" class="checkbox">
+                                </div>
+                                <br>
+                                <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Registrarse</button>
+                                <br>
+                                <br>
+                            <a href="#" class="register" >
+                                Ingresar
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <br>
-                <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Registrarse</button>
-                <br>
-            <a href="#" class="register" >
-                Ingresar
-            </a>
-        </div><!-- /card-container -->
-    </div><!-- /container -->
+            </div>          
+        </div>
+        <ul class="sci">
+            <li><a href="#"><img src="assets/facebook.png"></a></li>
+            <li><a href="#"><img src="assets/instagram.png"></a></li>
+            <li><a href="#"><img src="assets/twitter.png"></a></li>
+        </ul>
+</section>
